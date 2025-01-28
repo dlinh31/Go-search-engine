@@ -16,5 +16,6 @@ func analyze(text string) []string{
 	tokens := tokenize(text)
 	tokens = lowercaseFiler(tokens)
 	tokens = stopwordFilers(tokens)
-	tokens = stemmerFiler(tokens)
+	tokens = stemmerFilter(tokens)
+	return tokens
 }
